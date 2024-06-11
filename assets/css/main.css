@@ -1791,7 +1791,7 @@ input, select, textarea {
 				-ms-transition: top .2s ease-in-out;
 				transition: top .2s ease-in-out;
 				display: block;
-				width: 48px;
+				width: 70px;
 				height: 48px;
 				border-radius: 6px;
 				top: 0;
@@ -1966,6 +1966,7 @@ input, select, textarea {
 
 		.icon > .label {
 			display: block;
+			color: #FFFFFF;
 		}
 
 		.icon.solid:before {
