@@ -1965,7 +1965,7 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			display: block;
 		}
 
 		.icon.solid:before {
