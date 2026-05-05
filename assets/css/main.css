@@ -491,16 +491,18 @@ strong, b { font-weight: 500; color: var(--charcoal); }
 
 .pcard-hero {
   width: 100%;
-  height: 240px;
+  height: 280px;
   overflow: hidden;
   background: var(--cream-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pcard-hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
   display: block;
 }
 
@@ -586,7 +588,15 @@ strong, b { font-weight: 500; color: var(--charcoal); }
   color: var(--white);
 }
 
-/* Social icons (keep Font Awesome working) */
+.research-funding {
+  font-size: 0.88rem;
+  color: var(--warm-gray-light);
+  font-style: italic;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Social icons — Font Awesome 6 */
 ul.social {
   display: flex;
   gap: 0.75rem;
@@ -599,35 +609,28 @@ ul.social li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.6) !important;
+  color: rgba(255,255,255,0.7);
   font-size: 1.1rem;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.15);
   transition: background var(--transition), color var(--transition), transform var(--transition);
   text-decoration: none;
 }
 
 ul.social li a:hover {
   background: var(--terra);
-  color: var(--white) !important;
+  color: var(--white);
   transform: translateY(-2px);
   border-color: transparent;
 }
 
-.icon:before {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-family: 'Font Awesome 5 Brands';
+.wrapper.style4 p {
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 2rem;
 }
-.icon.brands:before { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
-.icon > .label { display: none; }
 
 .copyright {
   font-size: 0.78rem;
